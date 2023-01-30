@@ -104,6 +104,14 @@ Description:
 		Indicates the number of received packets that were dropped on
 		an inactive device by the network core.
 
+What:		/sys/class/<iface>/statistics/rx_otherhost_dropped
+Date:		February 2023
+KernelVersion:	6.3
+Contact:	netdev@vger.kernel.org
+Description:
+		Indicates the number of received packets that were dropped due
+		to mismatch in destination MAC address.
+
 What:		/sys/class/<iface>/statistics/rx_over_errors
 Date:		April 2005
 KernelVersion:	2.6.12
