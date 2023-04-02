@@ -445,6 +445,9 @@ purposes. The supported statistics are shown below:
        __u64 rx_dropped; /* Dropped for reasons other than invalid desc */
        __u64 rx_invalid_descs; /* Dropped due to invalid descriptor */
        __u64 tx_invalid_descs; /* Dropped due to invalid descriptor */
+       __u64 rx_ring_full; /* Dropped due to rx ring being full */
+       __u64 rx_fill_ring_empty_descs; /* Failed to retrieve item from fill ring */
+       __u64 tx_ring_empty_descs; /* Failed to retrieve item from tx ring */
    };
 
 XDP_OPTIONS getsockopt
